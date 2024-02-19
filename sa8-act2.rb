@@ -1,4 +1,4 @@
-puts "Problem 1"
+# Problem 1
 
 class Laptop
   def initialize(brand, model)
@@ -19,7 +19,7 @@ laptop1 = Laptop.new("Dell", "i3")
 puts laptop1.brand
 puts laptop1.model
 
-puts "Problem 2"
+# Problem 2
 
 class Gadget
   def initialize(name, price)
@@ -35,7 +35,7 @@ gadget1 = Gadget.new("phone", 100)
 puts gadget1.name
 gadget1.price = 200
 
-puts "Problem 3"
+# Problem 3
 
 class User
   def initialize(username)
@@ -53,7 +53,7 @@ end
 
 user1 = User.new("TJMarie")
 
-puts "Problem 4"
+# Problem 4
 
 class Appliance
   def show_info
@@ -77,7 +77,7 @@ fridge1 = Refrigerator.new
 fridge1.fridge
 fridge1.show_info
 
-puts "Problem 5"
+# Problem 5
 
 module Payments
   class Invoice
@@ -91,3 +91,24 @@ end
 
 invoice1 = Payments::Invoice.new
 receipt1 = Payments::Receipt.new
+
+# Problem 6
+
+module Drivable
+  def drive
+    puts "Zoom Zoom"
+  end
+end
+
+class Car
+  include Drivable
+end
+
+class Truck
+  include Drivable
+end
+
+car1 = Car.new
+car1.drive
+truck1 = Truck.new
+truck1.drive
