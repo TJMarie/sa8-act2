@@ -76,3 +76,18 @@ end
 fridge1 = Refrigerator.new
 fridge1.fridge
 fridge1.show_info
+
+puts "Problem 5"
+
+module Payments
+  class Invoice
+
+  end
+
+  class Receipt
+
+  end
+end
+
+invoice1 = Payments::Invoice.new
+receipt1 = Payments::Receipt.new
