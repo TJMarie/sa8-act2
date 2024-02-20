@@ -112,3 +112,31 @@ car1 = Car.new
 car1.drive
 truck1 = Truck.new
 truck1.drive
+
+# Problem 7
+
+class Writer
+  def create
+    puts "I am Writing"
+  end
+end
+
+class Painter
+  def create
+    puts "I am Painting"
+  end
+end
+
+def showcase_talent
+  writer1 = Writer.new
+  writer2 = Writer.new
+  writer3 = Writer.new
+  painter1 = Painter.new
+  painter2 = Painter.new
+  painter3 = Painter.new
+  creatives = [writer1, painter1, writer2, painter2, writer3, painter3]
+  creatives.each do |n|
+    n.create
+  end
+end
+showcase_talent
