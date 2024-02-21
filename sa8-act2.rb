@@ -189,3 +189,17 @@ end
 camera1 = Camera.new
 camera1.turn_off
 camera1.turn_on
+
+# Problem 10
+
+class Quiz
+  ["history", "science", "math"].each do |subject|
+    define_method("question_about_#{subject}") do |question|
+      puts question
+    end
+  end
+end
+
+history = Quiz.new.question_about_history "When did Columbus sail the ocean blue?"
+science = Quiz.new.question_about_science "What are the characteristics of a mammal?"
+math = Quiz.new.question_about_math "What is a prime number?"
