@@ -140,3 +140,30 @@ def showcase_talent
   end
 end
 showcase_talent
+
+# Problem 8
+
+class BankAccount
+  def initialize(checking)
+    @checking = checking
+  end
+
+  def deposit(amount)
+    @checking += amount
+    log_transaction("deposit", amount)
+  end
+
+  def withdraw(amount)
+    @checking -= amount
+    log_transaction("withdrawal", amount)
+  end
+
+  def log_transaction(transaction, amount)
+    puts "Bank account has made a #{transaction} of #{amount}"
+  end
+  private :log_transaction
+end
+
+account1 = BankAccount.new(1000)
+account1.deposit(100)
+account1.withdraw(50)
