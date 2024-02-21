@@ -167,3 +167,25 @@ end
 account1 = BankAccount.new(1000)
 account1.deposit(100)
 account1.withdraw(50)
+
+#Problem 9
+
+class Camera
+  def initialize
+    @status = "off"
+  end
+
+  def turn_on
+    @status = "on"
+    puts "Camera is #{@status}"
+  end
+
+  def turn_off
+    @status = "off"
+    puts "Camera is #{@status}"
+  end
+end
+
+camera1 = Camera.new
+camera1.turn_off
+camera1.turn_on
